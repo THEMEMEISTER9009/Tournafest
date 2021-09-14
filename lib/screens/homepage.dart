@@ -96,11 +96,72 @@ class HomePage extends StatelessWidget {
           ),
           centerTitle: true,
         ),
-        body: TabBarView(
+        body: Stack(
           children: [
-            PopularTab(),
-            Center(),
-            Center(),
+            TabBarView(
+              children: [
+                PopularTab(),
+                Center(),
+                Center(),
+              ],
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Container(
+                  height: height * 0.12,
+                  decoration: BoxDecoration(
+                    borderRadius:
+                        BorderRadius.vertical(top: Radius.circular(30)),
+                    color: colWhite,
+                  ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Container(
+                            child: Icon(
+                              Icons.home,
+                              color: colWhite,
+                            ),
+                            width: width * 0.2,
+                            height: height * 0.05,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8),
+                              color: colOrange,
+                            ),
+                          ),
+                          Container(
+                            child: Icon(
+                              Icons.bookmark_outline_rounded,
+                              color: colBlack,
+                            ),
+                            width: width * 0.2,
+                            height: height * 0.05,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                          ),
+                          Container(
+                            child: Icon(
+                              Icons.person_outline_rounded,
+                              color: colBlack,
+                            ),
+                            width: width * 0.2,
+                            height: height * 0.05,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ),

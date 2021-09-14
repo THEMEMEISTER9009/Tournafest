@@ -51,13 +51,13 @@ class MovieItem extends StatelessWidget {
                             children: [
                               SizedBox(),
                               Text(
-                                "Gardians of the galaxy vol. 2",
+                                "Guardians of the Galaxy Vol. 2",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
                               Text(
-                                "Animation | Drama",
+                                "Action | Adventure | Comedy",
                                 style: TextStyle(
                                   color: Colors.grey,
                                   fontWeight: FontWeight.bold,
@@ -74,7 +74,7 @@ class MovieItem extends StatelessWidget {
                                     width: width * 0.005,
                                   ),
                                   Text(
-                                    "7.1",
+                                    "7.6",
                                     style: TextStyle(
                                       color: Colors.grey,
                                       fontWeight: FontWeight.bold,
