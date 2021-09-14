@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:technofest/screens/homepage.dart';
 
 main() => runApp(
       MyApp(),
@@ -7,6 +8,9 @@ main() => runApp(
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: HomePage(),
+    );
   }
 }
